@@ -1,0 +1,10 @@
+const { upgradeProxy } = require('@openzeppelin/truffle-upgrades');
+
+//const PROXY_ADDRESS = "0x5067457698Fd6Fa1C6964e416b3f42713513B3dD";
+const PROXY_ADDRESS = {proxy_address};
+const BoxV2 = artifacts.require('BoxV2');
+
+module.exports = async function (deployer) {
+  await upgradeProxy(PROXY_ADDRESS, BoxV2, { deployer });
+  console.log("Proxy upgraded");
+};
