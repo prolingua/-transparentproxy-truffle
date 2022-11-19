@@ -1,6 +1,6 @@
 const { upgradeProxy } = require('@openzeppelin/truffle-upgrades');
 
-//const PROXY_ADDRESS = "0x5067457698Fd6Fa1C6964e416b3f42713513B3dD";
+//const PROXY_ADDRESS = "0x652FE752F4d646de7c179D41914A87b8Af21aCcF";
 const PROXY_ADDRESS = {proxy_address};
 const BoxV2 = artifacts.require('BoxV2');
 
